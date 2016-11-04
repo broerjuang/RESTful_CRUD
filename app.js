@@ -2,14 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
+<<<<<<< HEAD
 const pug = require('pug')
 
 
+=======
+>>>>>>> 40fac10
 
 // parse incoming requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+<<<<<<< HEAD
 // serve static files from /public
 app.use(express.static(__dirname + '/public'));
 
@@ -17,6 +21,8 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
+=======
+>>>>>>> 40fac10
 // include routes
 var routes = require('./routes/index');
 app.use('/', routes);
