@@ -1,0 +1,25 @@
+{
+  "name": "restful_crud",
+  "version": "1.0.0",
+  "description": "restful crud using express and ajax",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broerjuang/RESTful_CRUD.git"
+  },
+  "keywords": [
+    "restful",
+    "crud",
+    "express",
+    "ajax"
+  ],
+  "author": "broerjuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/broerjuang/RESTful_CRUD/issues"
+  },
+  "homepage": "https://github.com/broerjuang/RESTful_CRUD#readme"
+}
