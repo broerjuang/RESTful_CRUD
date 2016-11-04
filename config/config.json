@@ -1,0 +1,6 @@
+{
+  "development": {
+    "storage": "./db/restful",
+    "dialect": "sqlite"
+  }
+}
