@@ -1,14 +1,30 @@
 'use strict'
 
-const express = require('express');
-const router = express.Router();
-const controller = require('../controller/memo')
+var express = require('express');
+var router = express.Router();
+var memoCtrl = require('../controllers/memo.server.controller');
 
-//get by id
-router.get('/', controller.list)
-router.post('/', controller.create)
-router.get('/:id', controller.find)
-router.put('/:id', controller.update)
-router.delete('/:id', controller.delete)
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
-module.exports = router
+
+/* GET the list */
+router.get('/memo', memoCtrl.list)
+
+/* Post New Memo */
+router.post('/memo', memoCtrl.create)
+
+/* Update Memo by its title */
+router.put('/memo/:title', memoCtrl.update)
+
+/*  Get memo by its title */
+router.get('/memo/:title', memoCtrl.findTitle)
+
+/* Delete memo by its title */
+router.delete('/memo/:title', memoCtrl.delete)
+
+
+
+module.exports = router;
